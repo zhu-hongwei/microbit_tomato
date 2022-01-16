@@ -1,7 +1,39 @@
 input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     basic.showString("" + (tomato_num))
+    basic.clearScreen()
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     basic.showString("" + (working))
+    basic.clearScreen()
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     basic.showString("" + (funing))
+    basic.clearScreen()
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     if (working == 0 && funing == 0) {
@@ -57,7 +89,13 @@ input.onButtonPressed(Button.AB, function () {
             # # # # #
             `)
         for (let index = 0; index < 5; index++) {
-            basic.clearScreen()
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                `)
             basic.showArrow(ArrowNames.South)
         }
         tomato_num += 1
@@ -103,9 +141,14 @@ input.onButtonPressed(Button.AB, function () {
             . . . # .
             . . . . #
             `)
-        basic.pause(1000*60*5)
         for (let index = 0; index < 5; index++) {
-            basic.clearScreen()
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                `)
             basic.showArrow(ArrowNames.North)
         }
         working = 0
