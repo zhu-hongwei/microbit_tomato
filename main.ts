@@ -49,8 +49,21 @@ input.onButtonPressed(Button.A, function () {
         `)
     tomato_num += 1
     while (true) {
-        basic.showIcon(IconNames.SmallSquare)
-        basic.showIcon(IconNames.Square)
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showArrow(ArrowNames.South)
     }
 })
 input.onButtonPressed(Button.AB, function () {
@@ -107,8 +120,21 @@ input.onButtonPressed(Button.B, function () {
         # # . # #
         `)
     while (true) {
-        basic.showIcon(IconNames.SmallDiamond)
-        basic.showIcon(IconNames.Diamond)
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showArrow(ArrowNames.North)
     }
 })
 let tomato_num = 0
