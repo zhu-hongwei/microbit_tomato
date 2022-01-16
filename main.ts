@@ -7,7 +7,7 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*5)
     basic.showLeds(`
         # # # # #
         . . . . .
@@ -15,7 +15,7 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*5)
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -23,7 +23,7 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*5)
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -31,7 +31,7 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*5)
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*5)
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -47,8 +47,11 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         # # # # #
         `)
-    basic.showArrow(ArrowNames.South)
     tomato_num += 1
+    while (true) {
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Square)
+    }
 })
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
@@ -63,7 +66,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(1000*60*5)
+    basic.pause(1000*60*1)
     basic.showLeds(`
         # # . # #
         . . . . .
@@ -71,7 +74,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*1)
     basic.showLeds(`
         # # . # #
         # # . # #
@@ -79,7 +82,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*1)
     basic.showLeds(`
         # # . # #
         # # . # #
@@ -87,7 +90,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*1)
     basic.showLeds(`
         # # . # #
         # # . # #
@@ -95,7 +98,7 @@ input.onButtonPressed(Button.B, function () {
         # # . # #
         . . . . .
         `)
-    basic.pause(300000)
+    basic.pause(1000*60*1)
     basic.showLeds(`
         # # . # #
         # # . # #
@@ -103,7 +106,10 @@ input.onButtonPressed(Button.B, function () {
         # # . # #
         # # . # #
         `)
-    basic.showArrow(ArrowNames.North)
+    while (true) {
+        basic.showIcon(IconNames.SmallDiamond)
+        basic.showIcon(IconNames.Diamond)
+    }
 })
 let tomato_num = 0
 tomato_num = 0
