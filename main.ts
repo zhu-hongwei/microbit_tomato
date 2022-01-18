@@ -1,5 +1,7 @@
+input.onButtonPressed(Button.A, function () {
+	
+})
 input.onGesture(Gesture.Shake, function () {
-    basic.clearScreen()
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -8,7 +10,6 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         `)
     basic.showString("" + (tomato_num))
-    basic.clearScreen()
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -17,7 +18,6 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         `)
     basic.showString("" + (working))
-    basic.clearScreen()
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -26,7 +26,6 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         `)
     basic.showString("" + (funing))
-    basic.clearScreen()
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -34,13 +33,29 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         . . . . .
         `)
+    basic.showString("" + (tomato_num))
 })
 input.onButtonPressed(Button.AB, function () {
     if (working == 0 && funing == 0) {
         working = 1
         funing = 0
-        basic.showIcon(IconNames.SmallHeart)
-        basic.showIcon(IconNames.Heart)
+        basic.clearScreen()
+        basic.showLeds(`
+            . # # # .
+            . . . # .
+            . # # # .
+            . # . . .
+            . # # # .
+            `)
+        basic.pause(500)
+        basic.showLeds(`
+            . # # # .
+            . # . . .
+            . # # # .
+            . . . # .
+            . # # # .
+            `)
+        basic.pause(500)
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -99,9 +114,9 @@ input.onButtonPressed(Button.AB, function () {
             basic.showArrow(ArrowNames.South)
         }
         tomato_num += 1
-        basic.showString("funing")
         working = 0
         funing = 1
+        basic.pause(1000*60*1)
         basic.showLeds(`
             # . . . .
             . . . . .
@@ -156,6 +171,9 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         basic.showIcon(IconNames.No)
     }
+})
+input.onButtonPressed(Button.B, function () {
+	
 })
 let funing = 0
 let working = 0
