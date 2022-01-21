@@ -1,7 +1,7 @@
 input.onButtonPressed(Button.A, function () {
 	
 })
-input.onGesture(Gesture.Shake, function () {
+input.onGesture(Gesture.LogoUp, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
