@@ -1,39 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-	
+    basic.showString("" + (tomato_num))
+    basic.showString("tomato_num")
 })
-input.onGesture(Gesture.LogoUp, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (tomato_num))
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (working))
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (funing))
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (tomato_num))
+input.onGesture(Gesture.Shake, function () {
+	
 })
 input.onButtonPressed(Button.AB, function () {
     if (working == 0 && funing == 0) {
@@ -173,7 +143,22 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-	
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showString("" + (working))
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showString("" + (funing))
 })
 let funing = 0
 let working = 0
