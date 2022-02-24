@@ -1,6 +1,8 @@
-input.onButtonPressed(Button.A, function () {
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.showString("" + (tomato_num))
-    basic.showString("tomato_num")
+})
+input.onButtonPressed(Button.A, function () {
+	
 })
 input.onGesture(Gesture.Shake, function () {
 	
@@ -81,6 +83,7 @@ input.onButtonPressed(Button.AB, function () {
                 . . . . .
                 . . . . .
                 `)
+            soundExpression.spring.play()
             basic.showArrow(ArrowNames.South)
         }
         tomato_num += 1
@@ -141,24 +144,6 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         basic.showIcon(IconNames.No)
     }
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (working))
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showString("" + (funing))
 })
 let funing = 0
 let working = 0
