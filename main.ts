@@ -28,8 +28,11 @@ input.onButtonPressed(Button.A, function () {
     }
     basic.showArrow(ArrowNames.North)
 })
-input.onButtonPressed(Button.AB, function () {
+input.onGesture(Gesture.Shake, function () {
     basic.showString("" + (tomato_num))
+})
+input.onButtonPressed(Button.AB, function () {
+    tomato_num += 10
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
