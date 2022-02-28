@@ -1,5 +1,8 @@
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-	
+    for (let index = 0; index < 3; index++) {
+        basic.showIcon(IconNames.SmallHeart)
+        basic.showIcon(IconNames.Heart)
+    }
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
@@ -12,7 +15,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(1000*60*10)
     basic.showArrow(ArrowNames.South)
     tomato_num += 10
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < 5; index++) {
         soundExpression.spring.play()
     }
     basic.showLeds(`
@@ -24,7 +27,7 @@ input.onButtonPressed(Button.A, function () {
         `)
     basic.pause(1000*60*2)
     basic.showArrow(ArrowNames.North)
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < 3; index++) {
         soundExpression.spring.play()
     }
 })
@@ -46,7 +49,7 @@ input.onButtonPressed(Button.B, function () {
     basic.pause(1000*60*20)
     basic.showArrow(ArrowNames.South)
     tomato_num += 20
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < 5; index++) {
         soundExpression.spring.play()
     }
     basic.showLeds(`
@@ -58,7 +61,7 @@ input.onButtonPressed(Button.B, function () {
         `)
     basic.pause(1000*60*4)
     basic.showArrow(ArrowNames.North)
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < 3; index++) {
         soundExpression.spring.play()
     }
 })
