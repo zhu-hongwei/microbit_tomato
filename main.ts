@@ -97,4 +97,5 @@ working = 0
 funing = 0
 mins = 0
 basic.showIcon(IconNames.Happy)
-music.playMelody("C D E F G A B C5 ", 120)
+music.setVolume(150)
+music.playMelody("C D E F G A B C5 ", 200)
