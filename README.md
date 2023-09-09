@@ -16,7 +16,7 @@
 
 * 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * 点击 **导入**，然后点击 **导入 URL**
-* 粘贴 **https://github.com/xiaohongcoder/microbit_tomato** 并点击导入
+* 粘贴 **https://github.com/zhu-hongwei/microbit_tomato** 并点击导入
 
 ## 积木块预览
 
